@@ -1,5 +1,3 @@
-import sys
-
 text_file = open('day1input.txt', 'r')
 lines = text_file.readlines()
 calibrations = []
@@ -9,6 +7,7 @@ for line in lines:
     for c in range(0, len(line)):
         if (line[c].isnumeric()):
             num.append(line[c])
+        # Part 2
         elif (line[c:c+3] == 'one'):
             num.append('1')
         elif (line[c:c+3] == 'two'):
