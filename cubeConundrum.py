@@ -2,8 +2,8 @@ maxRed = 12
 maxGreen = 13
 maxBlue = 14
 
-text_file = open('day2input.txt', 'r')
-games = text_file.readlines()
+textFile = open('day2input.txt', 'r')
+games = textFile.readlines()
 validGames = 0
 sumPower = 0
 
