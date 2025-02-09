@@ -31,6 +31,7 @@ for line in range(len(lines)):
     start = 0
     end = 0
     i = 0
+    # i needed to use a while because the for loops don't allow outside increments
     while i < len(lines[line]):
         if lines[line][i] in number:
             start = i
