@@ -8,17 +8,31 @@ for line in lines:
     left.append(int(pair[0]))
     right.append(int(pair[1]))
 
-leftsorted = sorted(left)
-rightsorted = sorted(right)
+# part 1
 
-difference = []
+# left_sorted = sorted(left)
+# right_sorted = sorted(right)
 
-for i in range(0, len(leftsorted)):
-    difference.append(abs(leftsorted[i]-rightsorted[i]))
+# difference = []
+# for i in range(0, len(left_sorted)):
+#     difference.append(abs(left_sorted[i]-right_sorted[i]))
 
+# sum = 0
+# for d in difference:
+#     sum += d
+
+# part 2
+score = []
+
+left_set = set(left)
+
+for i in left_set:
+    count = right.count(i)
+    score.append(count*i)
 
 sum = 0
-for d in difference:
-    sum += d
+for i in score:
+    sum += i
+
 
 print(f"\n sum: {sum}\n")
